@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Resumo da Viagem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f6f7;
+      margin: 0;
+      padding: 20px;
+      color: #2b2b2b;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 6px;
+      padding: 20px;
+      max-width: 650px;
+      margin: auto;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 1.6em;
+      margin-bottom: 25px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section h2 {
+      font-size: 1.05em;
+      color: #34495e;
+      margin-bottom: 12px;
+      border-left: 4px solid #5d6d7e;
+      padding-left: 8px;
+    }
+
+    .flight {
+      background: #f9fafa;
+      border: 1px solid #dce1e6;
+      border-radius: 6px;
+      padding: 16px;
+      margin-bottom: 15px;
+    }
+
+    .route {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1em;
+      font-weight: bold;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+    }
+
+    .arrow {
+      font-size: 1.4em;
+      color: #5d6d7e;
+      margin: 0 10px;
+    }
+
+    .details {
+      font-size: 0.9em;
+      color: #444;
+      margin-top: 5px;
+    }
+
+    .locator {
+      margin-top: 8px;
+      font-size: 0.85em;
+      background: #5d6d7e;
+      color: #fff;
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    .airline-logo {
+      max-height: 28px;
+      margin-top: 8px;
+    }
+
+    .agency-logo {
+      max-height: 120px;
+      margin-bottom: 25px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 0.9em;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    @media (max-width: 480px) {
+      .route {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .arrow {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <!-- Logo da Agência -->
+    <img src="logos/Logo_VFB_07-2000x2000.png" alt="Logo da Agência" class="agency-logo">
+
+    <h1>Resumo da Viagem ✈️</h1>
+
+    <div class="section">
+      <h2>Trechos da Viagem</h2>
+
+      <!-- JetSMART -->
+      <div class="flight">
+        <div class="route">
+          <div>Recife (REC)<br><small>20/09/2025 – 12h00</small></div>
+          <div class="arrow">➡️</div>
+          <div>Buenos Aires (EZE)<br><small>20/09/2025 – 17h25</small></div>
+        </div>
+        <div class="details">Voo: <strong>JA3701</strong> | Tarifa: Basic</div>
+        <div class="details">Passageiros: Lucas Galvão / Graziela Pereira</div>
+        <span class="locator">Localizador: A66XJP</span><br>
+        <img src="logos/Logo_JetSmart.jpg" alt="JetSMART" class="airline-logo">
+      </div>
+
+      <!-- LATAM -->
+      <div class="flight">
+        <div class="route">
+          <div>Buenos Aires (EZE)<br><small>25/09/2025 – 05h30</small></div>
+          <div class="arrow">➡️</div>
+          <div>Rio de Janeiro (GIG)<br><small>25/09/2025 – 08h15</small></div>
+        </div>
+        <div class="details">Voo: <strong>LA8023</strong> | Tarifa: Economy Basic</div>
+        <div class="details">Passageiros: Lucas Galvão / Graziela Pereira</div>
+        <span class="locator">Localizador: WXHLKC</span><br>
+        <img src="logos/Latam-logo.png" alt="LATAM" class="airline-logo">
+      </div>
+
+      <!-- LATAM - Lucas -->
+      <div class="flight">
+        <div class="route">
+          <div>Rio de Janeiro (GIG)<br><small>29/09/2025 – 06h15</small></div>
+          <div class="arrow">➡️</div>
+          <div>Recife (REC)<br><small>29/09/2025 – 09h05</small></div>
+        </div>
+        <div class="details">Voo: <strong>LA4628</strong> | Tarifa: Economy Light</div>
+        <div class="details">Passageiro: Lucas Galvão dos Santos</div>
+        <span class="locator">Localizador: IATJYG</span><br>
+        <img src="logos/Latam-logo.png" alt="LATAM" class="airline-logo">
+      </div>
+
+      <!-- LATAM - Graziela -->
+      <div class="flight">
+        <div class="route">
+          <div>Rio de Janeiro (GIG)<br><small>29/09/2025 – 06h15</small></div>
+          <div class="arrow">➡️</div>
+          <div>Recife (REC)<br><small>29/09/2025 – 09h05</small></div>
+        </div>
+        <div class="details">Voo: <strong>LA4628</strong> | Tarifa: Economy Light</div>
+        <div class="details">Passageira: Graziela Silva Pereira</div>
+        <span class="locator">Localizador: IBKTBX</span><br>
+        <img src="logos/Latam-logo.png" alt="LATAM" class="airline-logo">
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Bagagem</h2>
+      <p><strong>Tarifa Basic:</strong> 1 item pessoal (até 10 kg). Bagagem de mão e despachada não incluídas.</p>
+      <p><strong>Tarifa Light:</strong> 1 item pessoal (até 10 kg) + 1 mala de cabine (até 12 kg).</p>
+    </div>
+
+    <div class="section">
+      <h2>Informações Importantes</h2>
+      <ul>
+        <li>Chegar ao aeroporto com 3h de antecedência para voos internacionais e 2h para nacionais.</li>
+        <li>Passaporte válido (mínimo 6 meses) é obrigatório para entrada na Argentina.</li>
+        <li>Verificar requisitos de visto e vacinas antes da viagem.</li>
+        <li>Alterações e remarcações estão sujeitas às regras da tarifa.</li>
+      </ul>
+    </div>
+
+    <p style="text-align:center; margin-top: 20px; font-style: italic; color: #5d6d7e;">Que esta jornada seja repleta de
+      momentos inesquecíveis e novas descobertas. Desejamos uma viagem extraordinária! ✈️✨</p>
+  </div>
+</body>
+
+</html>
